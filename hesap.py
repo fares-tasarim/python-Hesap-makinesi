@@ -17,9 +17,25 @@ print(
 
 )
 
+def topla(say1,say2):
+    top = say1+say2
+    print(f"toplama sonucu:{top}")
 
+def çıkarma(say1,say2):
+    top = say1-say2
+    print(f"çıkarma sonucu:{top}")
 
+def çarpma(say1,say2):
+    top = float(say1)*float(say2)
+    print(f"çarpma sonucu:{top}")
 
+def bölme(say1,say2):
+    top = float(say1)/float(say2)
+    print(f"bölme sonucu:{top}")
+
+def üsalma(say1,say2):
+    top = float(say1)**float(say2)
+    print(f"üs alma sonucu:{top}")
 
 while True:
 
@@ -41,39 +57,52 @@ while True:
         continue
 
     print(menu1)
+    
     time.sleep(g)
+
     print(menu2)
+
     time.sleep(g)
+
     print(menu3)
+
     time.sleep(g)
+
     print(menu4)
+
     time.sleep(g)
+
     print(menu5)
+
     time.sleep(g)
+
     print(exitmenu)
+
     time.sleep(g)
+
     islem = input("Yapıcağınız işlemi yazınız:")
     if islem == "1":
-        top = say1 + say2
-        print("toplama sonucu:",top)
+        topla(say1,say2)
         time.sleep(d)
+
     elif islem == "2":
-        top = say1 - say2
-        print("Çıkarma işlemin sonucu:",top)
+        çıkarma(say1,say2)
         time.sleep(d)
+
     elif islem == "3":
-        top = float(say1) * float(say2)
-        print("Çarpma işlemin sonucu:",top)
+        çarpma(say1,say2)
         time.sleep(d)
+
     elif islem == "4":
-        top = say1 / say2
-        print("bölme işlemin sonucu:",top)
+        bölme(say1,say2)
         time.sleep(d)
+
     elif islem == "5":
-        top = say1 ** say2
-        print("üs alma işlemin sonucu:",top)
+        üsalma(say1,say2)
         time.sleep(d)
+
     elif islem == "exit":
         break
+
     else:
         print("Hatalı işlem")
