@@ -1,3 +1,3 @@
 # python-Hesap-makinesi
 python basit hesap makinesi
-sürüm: 1.0
+sürüm: 1.5
